@@ -18,6 +18,7 @@ body {
   background-color: var(--page-background-color);
     color: var(--main-text-color);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
 img, picture, video, canvas, svg {
@@ -44,6 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header {
+    background: linear-gradient(#387653, #316748);
     background-color: var(--main-color);
     height: 200px;
     display: flex;
@@ -119,6 +121,13 @@ p {
     background-color: lightgray;
     margin: 20px;
     border: 4px solid var(--main-color);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-window:hover {
+    transform: translateY(-5px) scale(1.02);
 }
 
 .section-divider {
@@ -129,14 +138,24 @@ p {
     border-radius: 5px;
 }
 
+main {
+    margin-bottom: 60px;
+}
+
+#about {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    padding: 0 20px;
+}
+
 .footer {
     background-color: var(--main-color);
     color: var(--page-background-color);
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
     font-family: 'Montserrat', Arial, sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 15px;
     width: 100%;
 }
