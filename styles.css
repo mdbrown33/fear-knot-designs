@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+    --main-color: #387653;
+    --divider-color: #D9CBB3;
+    --page-background-color: #F5F2EB;
+    --main-text-color: #3C3C3C;
+    --secondary-text-color: #A68A79;
+    --cta-accent-color: #C97A7E;
+    --hover-color: #D9A441;
+}
