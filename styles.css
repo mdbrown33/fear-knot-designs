@@ -52,7 +52,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header {
-    background: linear-gradient(#387653, #316748);
+    background: linear-gradient(#387653, #27533a);
     background-color: var(--main-color);
     height: 200px;
     display: flex;
@@ -127,10 +127,12 @@ p {
     width: 300px;
     background-color: lightgray;
     margin: 20px;
-    border: 4px solid var(--main-color);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+    border: 4px solid #;
+    box-shadow: 0 4px 8px ;
     transition: transform 0.3s ease;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
 }
 
 .product-window:hover {
@@ -141,6 +143,28 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.product-caption {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--page-background-color);
+  background: linear-gradient(180deg, #f1b649 20%, #D9A441 80%, #d5a03f);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.product-window:hover .product-caption {
+  opacity: 1;
+  transform: translateX(-57%) translateY(0);
 }
 
 .section-divider {
@@ -175,6 +199,7 @@ main {
 
 .footer {
     background-color: var(--main-color);
+    background: linear-gradient(180deg,#387653, #27533a);
     color: var(--page-background-color);
     text-align: center;
     padding: 10px;
